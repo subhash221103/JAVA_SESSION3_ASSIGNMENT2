@@ -1,0 +1,29 @@
+package day3;
+
+import java.util.Scanner;
+
+public class Assignment2 {
+	static boolean  flag=true;
+	static void checkPrime(int num){
+		for(int j=2;j<num;j++){
+			if(num%j==0){
+				flag=false;
+				break;
+			}
+		}
+		if(flag==true){
+			System.out.println("Number is prime");
+		}
+		else{
+			System.out.println("No is not prime");
+		}
+	}
+	public static void main(String[] args) {
+	     Scanner sc =new Scanner (System.in);
+	     
+	     System.out.println("Enter number to check if prime or not  ");
+	     
+	     checkPrime(sc.nextInt());
+	}
+
+}
